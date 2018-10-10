@@ -19,5 +19,6 @@ from django.conf.urls import url
 from myapp import views
 
 urlpatterns = [
+    url('myapp/', include('keijiban.urls')),
     path('admin/', admin.site.urls),
 ]
